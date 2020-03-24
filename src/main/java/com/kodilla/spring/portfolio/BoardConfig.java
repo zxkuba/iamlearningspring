@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Scope;
 public class BoardConfig {
 
     @Bean
-    @Scope("prototype")
     public Board board(){
         return new Board(taskList(), taskList(), taskList());
     }
